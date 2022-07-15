@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>FunWeb2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+<!--  http://localhost:8080/FunWeb2/join.me -->
+<!-- 처리담당자(서블릿 servlet) 지정-->
+<!-- .me로 끝나는 주소가 들어오면 servlet-name 찾아가서 
+ MemberController을 서블릿 지정해서  MemberController로 이동-->
+
+<servlet>
+	<servlet-name>MemberController</servlet-name>
+	<servlet-class>com.itwillbs.controller.MemberController</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+  	<servlet-name>MemberController</servlet-name>
+  	<url-pattern>*.me</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+	<servlet-name>BoardController</servlet-name>
+	<servlet-class>com.itwillbs.controller.BoardController</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+  	<servlet-name>BoardController</servlet-name>
+  	<url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
+   
+  
+</web-app>
+
+

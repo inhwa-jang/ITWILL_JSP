@@ -1,0 +1,137 @@
+홍진숙
+hongcine@itwillbs.co.kr
+
+자바 스프링 웹 개발자 양성
+
+주말 : 온라인 동영상강의
+직업기초(이력서,자기소개서,모의면접)
+네트워크개념, 서버개념
+프론트엔드 : HTML - CSS - Javascript - jQuery
+백엔드       : 자바 - JSP - MVC - 스프링(전자정부 표준프레임워크)
+데이터베이스 : 오라클,Mysql,...
+프로젝트 : 기능설계,파일설계, 형상관리(git) => 포트폴리오
+
+1. 실무교육
+2. 팀프로젝트(포트폴리오)
+3. 자격증(정보처리)
+
+개인프로젝트 : HTML - CSS - Javascript - JSP
+팀프로젝트 : jQuery - MVC - 스프링(전자정부 표준프레임워크)
+
+설치
+1. 자바 JDK 1.8
+2. 웹서버, 웹애플리케이션서버
+   아파치 톰캣
+https://tomcat.apache.org/
+Download
+Tomcat 8
+8.5.75
+32-bit/64-bit Windows Service Installer (pgp, sha512)
+apache-tomcat-8.5.75.exe
+
+웹서버 stop 웹페이지를 제공하는 서비스를 종료
+
+사용자
+웹브라우저를 실행 주소줄에 http://localhost:8080
+
+웹서버 start  웹페이지를 제공하는 서비스를 시작
+
+사용자
+웹브라우저를 실행 주소줄에 http://localhost:8080
+
+웹서버에서 웹페이지 제공하는 위치
+C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\ROOT
+
+자기자신 사용자
+웹브라우저를 실행 주소줄에 http://localhost:8080/index.jsp
+웹브라우저를 실행 주소줄에 http://localhost:8080/test1.html
+웹브라우저를 실행 주소줄에 http://localhost:8080/test2.jsp
+자기자신 사용자
+웹브라우저를 실행 주소줄에 http://127.0.0.1:8080/index.jsp
+웹브라우저를 실행 주소줄에 http://127.0.0.1:8080/test1.html
+웹브라우저를 실행 주소줄에 http://127.0.0.1:8080/test2.jsp
+
+IP번호
+cmd 
+ipcofing
+IPv4 주소 . . . . . . . . . : 192.168.7.200
+
+다른컴퓨터 사용자
+웹브라우저를 실행 주소줄에 http://192.168.7.200:8080/index.jsp
+웹브라우저를 실행 주소줄에 http://192.168.7.200:8080/test1.html
+웹브라우저를 실행 주소줄에 http://192.168.7.200:8080/test2.jsp
+
+웹서버 (아파치) : 웹브라우저를 통해서 웹페이지(html)를 전세계에 제공 서비스
+웹애플리케이션서버(톰캣) : jsp(java) 명령을 실행해서 html 형태 변경함
+
+웹서버 stop 웹페이지를 제공하는 서비스를 종료
+
+3. 데이터베이스
+
+4. 개발도구(개발툴) 
+- 메모장
+- 에디터(notepad++)
+https://notepad-plus-plus.org/downloads/
+
+- 전문개발툴(통합개발툴, 이클립스)
+eclipse.org
+https://www.eclipse.org/downloads/
+Download Packages
+Eclipse IDE for Enterprise Java and Web Developers
+Windows x86_64
+eclipse-jee-2021-12-R-win32-x86_64.zip
+
+설치 : 압축풀기 
+C:\eclipse_jsp7
+바탕화면 바로가기 만들기
+
+작업영역 
+d:workspace_jsp7 폴더 만들기
+
+1. 환경설정 => 한글 설정 utf-8
+Window - Preferences 
+General - Workspace 
+- Text file encoding - Other - UTF-8
+Web - CSS Files 
+- Encoding -ISO 10546/Unicode(UTF-8)
+Web- HTML Files 
+- Encoding -ISO 10546/Unicode(UTF-8)
+Web- JSP Files 
+- Encoding -ISO 10546/Unicode(UTF-8)
+
+2. 웹서버를 가져오기 => 포트설정
+File - New - Other - Server - Server -Next
+Apache - Tomcat v8.5 Server - Next 
+Browse ...
+C:\Program Files\Apache Software 
+Foundation\Tomcat 8.5
+Next - finish
+
+Servers 탭 - Tomcat 8.5 - 더블클릭
+Ports - Tomcat admin port - 8005 
+x클릭 - 저장
+
+3. 프로젝트 만들기  => 자바1.8변경
+File - New - Other - Web - Dynamic Web Project
+Next - Project Name : JspProject -Next-Next
+web.xml 체크 - Finish
+
+프로젝트 - Properties
+java Compiler - JDK Compliance - 체크해제
+1.8 선택
+Project Facets - Java 1.8
+Apply and Close
+
+
+4. 웹서버와 프로젝트 연결
+Servers 탭 
+Tomcat 8.5 - 오른쪽 버튼 - Add and Remove
+프로젝트 선택 - Add - Finish
+
+
+
+
+
+
+
+
